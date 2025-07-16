@@ -1,0 +1,152 @@
+/* Hostie Demo Eight - Clone Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fb;
+    color: #222;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.site-header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 20px 0;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2e5bff;
+    float: left;
+}
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.main-nav a:hover {
+    color: #2e5bff;
+}
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+.btn-primary {
+    background: #2e5bff;
+    color: #fff;
+    border: none;
+}
+.btn-primary:hover {
+    background: #1a3eb1;
+}
+.btn-secondary {
+    background: #fff;
+    color: #2e5bff;
+    border: 2px solid #2e5bff;
+}
+.btn-secondary:hover {
+    background: #2e5bff;
+    color: #fff;
+}
+.hero-section {
+    background: linear-gradient(120deg, #2e5bff 0%, #6a82fb 100%);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 80px 0;
+}
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-section p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+.features-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #fff;
+    padding: 60px 0;
+}
+.feature {
+    background: #f8f9fb;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    text-align: center;
+    width: 250px;
+}
+.pricing-section {
+    background: #f8f9fb;
+    padding: 80px 0;
+    text-align: center;
+}
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.plan {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 40px 30px;
+    width: 280px;
+    text-align: center;
+    position: relative;
+}
+.plan.featured {
+    border: 2px solid #2e5bff;
+    z-index: 1;
+}
+.plan h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.plan .price {
+    font-size: 2.2rem;
+    color: #2e5bff;
+    margin: 20px 0;
+}
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 30px 0;
+}
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.site-footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 20px 0;
+    margin-top: 60px;
+}
+@media (max-width: 900px) {
+    .pricing-table, .features-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan, .feature {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
